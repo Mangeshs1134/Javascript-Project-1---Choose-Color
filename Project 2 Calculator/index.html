@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../index.html"> <div class="home nav">Home</div></a>
+      <a href="https://github.com/Mangeshs1134"> <div class="github nav">Github</div></a>
+      <a href="https://www.linkedin.com/in/mangesh-gupta-30b14b227/"> <div class="linkedin nav">LinkedIn</div></a>
+      
+    </div>
+    <div class="calculator">
+      <form>
+        <div class="display">
+          <input type="text" class="display" name="display" />
+        </div>
+        <div class="button">
+          <input
+            type="button"
+            class="buttons ac"
+            value="AC"
+            onclick="display.value = `` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="Del"
+            onclick="display.value = display.value.toString().slice(0,-1) "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="/"
+            onclick="display.value += `/` "
+          />
+        </div>
+        <div class="button">
+          <input
+            type="button"
+            class="buttons"
+            value="7"
+            onclick="display.value += `7` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="8"
+            onclick="display.value += `8` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="9"
+            onclick="display.value += `9` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="X"
+            onclick="display.value += `*` "
+          />
+        </div>
+        <div class="button">
+          <input
+            type="button"
+            class="buttons"
+            value="4"
+            onclick="display.value += `4` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="5"
+            onclick="display.value += `5` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="6"
+            onclick="display.value += `6` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="-"
+            onclick="display.value += `-` "
+          />
+        </div>
+        <div class="button">
+          <input
+            type="button"
+            class="buttons"
+            value="1"
+            onclick="display.value += `1` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="2"
+            onclick="display.value += `2` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="3"
+            onclick="display.value += `3` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="+"
+            onclick="display.value += `+` "
+          />
+        </div>
+        <div class="button">
+          <input
+            type="button"
+            class="buttons"
+            value="00"
+            onclick="display.value += `00` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="0"
+            onclick="display.value += `0` "
+          />
+          <input
+            type="button"
+            class="buttons"
+            value="."
+            onclick="display.value += `.` "
+          />
+          <input
+            type="button"
+            class="buttons equal"
+            value="="
+            onclick="display.value=eval(display.value)"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="javas.js"></script>
+</html>
